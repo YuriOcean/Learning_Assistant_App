@@ -1,0 +1,20 @@
+/* 基础样式 */
+page {
+  --primary-color: #1890ff;
+  --warning-color: #faad14;
+  --success-color: #52c41a;
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+}
+
+/* 公共类 */
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Vant组件覆盖 */
+.van-dialog__header {
+  font-weight: 600;
+  color: var(--primary-color);
+}

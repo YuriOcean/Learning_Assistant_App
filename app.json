@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/schedule/index",
+    "pages/schedule/import"
+  ],
+  "window": {
+    "navigationBarTitleText": "课程助手",
+    "navigationStyle": "custom"
+  },
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "van-dialog": "@vant/weapp/dialog/index",
+    "van-cell": "@vant/weapp/cell/index"
+  },
+  "permission": {
+    "scope.userLocation": {}
+  }
+}
