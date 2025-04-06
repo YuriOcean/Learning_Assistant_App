@@ -1,0 +1,8 @@
+<view class="time-axis">
+  <block wx:for="{{times}}" wx:key="index">
+    <view class="time-item" style="height: {{itemHeight}}rpx">
+      <text>{{item}}</text>
+      <view class="line"></view>
+    </view>
+  </block>
+</view>

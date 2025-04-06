@@ -1,0 +1,16 @@
+<van-dialog 
+  id="import-dialog"
+  title="导入课程表"
+  show="{{ showImportDialog }}"
+>
+  <van-cell 
+    title="从学校系统导入" 
+    is-link 
+    bind:click="handleSchoolImport"
+  />
+  <van-cell 
+    title="上传Excel文件" 
+    is-link 
+    bind:click="handleFileImport"
+  />
+</van-dialog>

@@ -1,0 +1,33 @@
+<view class="week-view">
+  <!-- 周切换 -->
+  <view class="week-switcher">
+    <van-button 
+      icon="arrow-left" 
+      size="mini"
+      bind:tap="handlePrevWeek"
+    />
+    <text>第{{ currentWeek }}周</text>
+    <van-button 
+      icon="arrow" 
+      size="mini"
+      bind:tap="handleNextWeek"
+    />
+  </view>
+  
+  <!-- 课程表主体 -->
+  <view class="grid">
+    <view 
+      wx:for="{{ weekData }}"
+      wx:key="day"
+      class="day-column"
+    >
+      <text class="day-title">{{ item.day }}</text>
+      <block wx:for="{{ item.courses }}" wx:key="id">
+        <course-card 
+          course="{{ item }}" 
+          bind:tap="handleCourseTap"
+        />
+      </block>
+    </view>
+  </view>
+</view>
