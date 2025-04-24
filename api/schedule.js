@@ -24,11 +24,10 @@ const request = (options) => {
 		    })
 }
 
-// 示例：获取课程表
-// export const getSchedule = (week) => {
-//   return request({
-//       url: '/schedule',
-//           method: 'GET',
-//               data: { week }
-//                 })
-//                 }
+export const getSchedule = (week) => {
+  return request({
+    url: '/schedule',
+    method: 'GET',
+    data: { week }
+  });
+};
