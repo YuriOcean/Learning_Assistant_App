@@ -5,7 +5,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from bs4 import BeautifulSoup
 
 
-def get_small_lists(username,password):
+def get_schedule(username,password):
     driver = webdriver.Chrome()
     small_lists = []
 
@@ -92,6 +92,6 @@ def get_small_lists(username,password):
 
 # 使用示例
 if __name__ == "__main__":
-    # result = get_small_lists() # 这里替换成自己的学号和密码就可以使用了
+    # result = get_schedule() # 这里替换成自己的学号和密码就可以使用了
     # print("\n最终返回的小列表:")
     # print(result)
