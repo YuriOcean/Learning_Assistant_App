@@ -68,7 +68,8 @@ def get_schedule(username,password):
                 for cell in row.find_all('td'):
                     tmp = cell.string.replace('\n', '').replace('\t', '').replace(' ', '')
                     out.append(tmp)
-
+        out.remove('晚上')
+        out.remove('下午')
         # 数据分组
         front_list = out[:11]
         small_lists = []
