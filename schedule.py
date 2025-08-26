@@ -92,7 +92,7 @@ def get_schedule(username,password):
 
 
 # 使用示例
-if __name__ == "__main__":
+# if __name__ == "__main__":
     # result = get_schedule() # 这里替换成自己的学号和密码就可以使用了
     # print("\n最终返回的小列表:")
     # print(result)
